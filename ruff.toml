@@ -1,0 +1,9 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = [
+    "B008",  # Standard FastAPI Depends in argument defaults
+    "E501",  # Line length handled by formatter
+]
